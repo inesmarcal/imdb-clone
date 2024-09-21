@@ -1,6 +1,6 @@
 # docker build -t niklastiede/movie-db .
 
-FROM mysql:latest
+FROM mysql:9.0.1-oraclelinux9
 
 COPY init.sql /docker-entrypoint-initdb.d/init.sql
 
